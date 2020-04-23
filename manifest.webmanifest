@@ -1,7 +1,7 @@
 {
-    "short_name": "PWA Test",
-    "name": "PWA Test",
-    "description": "PWA Test",
+    "short_name": "Crescent PWA",
+    "name": "Crescent PWA",
+    "description": "Crescent PWA",
     "icons": [
       {
         "src": "./icons/192.png",
