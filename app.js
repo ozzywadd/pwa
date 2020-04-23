@@ -1,4 +1,11 @@
-/* SCANNER
+/* 
+
+SCANNER MARKUP
+
+<h2>Input</h2>
+<input id="input" type="text" autofocus onblur="this.focus()">
+<button onclick="document.getElementById('input').value = ''">Clear</button>
+
 document.addEventListener('keypress', keypressHandler);
 
 function keypressHandler(e) 
