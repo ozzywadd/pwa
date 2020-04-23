@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.webmanifest">
     <title>PWA Demo</title>
 </head>
 <body>
@@ -11,6 +12,15 @@
     <button onclick="document.getElementById('input').value = ''">Clear</button>
 
     <div id="output"></div>
-    <script src="./app.js"></script>
+
+    <script src="/app.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
 </body>
 </html>
